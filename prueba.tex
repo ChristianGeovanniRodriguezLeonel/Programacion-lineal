@@ -3,12 +3,66 @@
 \title{Apuntes de programaci\'on lineal}
 
 \author{Christian G. Rodr\'iguez Leonel}
+
 \usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+
+\usepackage[spanish]{babel}
 
 \begin{document}
 
 \maketitle
 
-La forma estándar de un problema de progamación lineal es:\\
+\tableofcontents
+
+\section{Introducción}
+
+\label{sec:introduccion}
+
+\subsection{Forma estándar}
+
+
+
+
+
+La forma estándar de un problema de progamación lineal es:
+
 Dados una matriz $A$ y vectores $b,c$, maximizar $c^{T}x$ sujeto a $Ax\leq b$.
+
+Maximizar: $C_{1}X_{1}+ C_{2}X_{}2+ ... +C_{n}X_{n}$
+
+
+\subsection{Forma simplex}
+
+
+La forma ``Simplex'' de un problema de programación lineal es:
+
+Dados una matriz $A$ y vectores $b,c$, maximizar $c^{T}x$ sujeto a $Ax=b$.
+
+\begin{tabular}{c|c|c}
+  & A & B \\
+  \hline
+  
+  Maquina 1 & 1 & 2 \\
+  Maquina 2 & 1 & 1
+
+\end{tabular}
+
+\begin{equation}
+  \label{eq:1}
+ A=
+  \begin{pmatrix}
+    0 & 1 & 55\\
+    5 & 9 & 1
+  \end{pmatrix}
+  \begin{pmatrix}
+    1 & 0\\
+    2 & 99 \\
+    8 & 0
+  \end{pmatrix}
+\end{equation}
 \end{document}
+
+
+
