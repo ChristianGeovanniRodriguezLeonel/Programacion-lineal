@@ -1,0 +1,67 @@
+
+\documentclass{article}
+
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+
+\title{El método símplex}
+\author{Christian G.}
+
+\begin{document}
+\maketitle
+\section{Introducción}
+
+El método simplex es un algoritmo para resolver problemas de programación lineal. Fue inventado por George Dantzing en el año 1947.
+
+\section{Ejemplo}
+\label{sec:ejemplo}
+
+Ilustraremos la aplicación del método simplex con un ejemplo.
+
+
+Resuelve el siguiente problema utilizando el método símplex:
+
+\begin{equation*}
+\begin{aligned}
+\text{Minimizar} \quad & x_{1}-x_{2}\\
+\text{sujeto a} \quad &
+  \begin{aligned}
+   3x_{1}-x_{2} & \geq 3\\
+   x_{1}+x_{2} &\geq -8\\
+   x_{1},x_{2} &\geq 0
+  \end{aligned}
+\end{aligned}
+\end{equation*}\\
+
+
+Para aplicar el método simplex, debemos tener el problema expresado, en primera instáncia en forma ''estándar'', el cual nos pide maximizar en vez de minimizar, y las variables deben de estar del lado izquierdo de la desigualdad, por tanto, para corregir esto:\\
+
+Minimizar $x_{1}-x_{2}$ es equivalente a Maximizar $-x_{1}+x_{2}$, es decir, se multiplica por $-1$ la expresión a minimizar.\\
+
+Tener $3x_{1}-x_{2} \geq 3$ es equivalente a tener $-3x_{1}+x_{2} \leq -3$.\\
+
+
+Analogamente $x_{1}+x_{2} \geq -8$ es equivalente a tener $-x_{1}-x_{2} \leq 8$\\
+
+Por lo cual, nuestro problema en su forma estándar es:\\
+
+
+\begin{equation*}
+\begin{aligned}
+  \text{Maximizar} \quad & -x_{1}+x_{2}\\
+\text{sujeto a} \quad &
+  \begin{aligned}
+   -3x_{1}+x_{2} & \leq -3\\
+   -x_{1}-x_{2} &\leq 8\\
+   x_{1},x_{2} &\geq 0
+  \end{aligned}
+\end{aligned}
+\end{equation*}
+
+
+
+\end{document}
+
+
+
